@@ -1,0 +1,36 @@
+<footer class="mt-20 border-t border-sage-200 pt-10 font-body text-sm text-sage-600">
+  <div class="flex flex-col gap-10 md:flex-row md:justify-between pb-10">
+
+    <div class="max-w-xs">
+      <div class="flex items-center gap-3 mb-3">
+        <img class="h-7 w-7" src="/images/stylized_plant_logo.svg" alt="Trellis logo">
+        <span class="font-serif text-base font-bold text-sage-950">{{ site.Title }}</span>
+      </div>
+      <p class="leading-7 text-sage-600">A specification format and tooling layer for keeping AI-assisted codebases disciplined, legible, and architecturally coherent.</p>
+    </div>
+
+    <div class="flex gap-16 shrink-0">
+      <div>
+        <p class="font-body text-xs font-semibold uppercase tracking-[0.18em] text-sage-400 mb-3">Reading</p>
+        <ul class="space-y-2">
+          <li><a href="/whitepaper/"  class="hover:text-sage-950 transition-colors">Whitepaper</a></li>
+          <li><a href="/faq/"         class="hover:text-sage-950 transition-colors">FAQ</a></li>
+          <li><a href="/quickstart/"  class="hover:text-sage-950 transition-colors">Quickstart</a></li>
+          <li><a href="/glossary/"    class="hover:text-sage-950 transition-colors">Glossary</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-body text-xs font-semibold uppercase tracking-[0.18em] text-sage-400 mb-3">GitHub</p>
+        <ul class="space-y-2">
+          <li><a href="{{ site.Params.github }}"              class="hover:text-sage-950 transition-colors" target="_blank" rel="noopener noreferrer">trellis</a></li>
+          <li><a href="https://github.com/norlinga"           class="hover:text-sage-950 transition-colors" target="_blank" rel="noopener noreferrer">norlinga</a></li>
+          <li><a href="https://github.com/robertferguson"     class="hover:text-sage-950 transition-colors" target="_blank" rel="noopener noreferrer">robertferguson</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <p class="mt-8 border-t border-sage-200 pt-8 font-body text-xs text-sage-400">
+    &copy; {{ now.Year }} Aaron Norling &amp; Robert Ferguson. All rights reserved.
+  </p>
+</footer>

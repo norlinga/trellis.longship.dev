@@ -1,0 +1,26 @@
+<header class="mb-14 border-b border-sage-200 pb-7">
+  <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+
+    <a href="/" class="flex items-center gap-4 group" aria-label="{{ site.Title }} home">
+      <img class="h-11 w-11 shrink-0" src="/images/stylized_plant_logo.svg" alt="Trellis logo">
+      <div>
+        <span class="block font-serif text-2xl font-bold text-sage-950 transition-colors group-hover:text-emerald-700">{{ site.Title }}</span>
+        <span class="block font-body text-xs tracking-[0.08em] text-sage-500 mt-0.5">{{ site.Params.tagline }}</span>
+      </div>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 font-body text-sm text-sage-600">
+        {{ range site.Menus.main }}
+          <li>
+            <a class="transition-colors hover:text-sage-950" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+        <li>
+          <a class="transition-colors hover:text-sage-950" href="{{ site.Params.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>

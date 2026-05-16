@@ -1,0 +1,65 @@
+baseURL = "https://trellis.longship.dev/"
+locale = "en-US"
+title = "trellis"
+enableRobotsTXT = true
+cleanDestinationDir = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Trellis is a specification format and tooling layer for keeping AI-assisted codebases disciplined, legible, and architecturally coherent."
+  tagline = "Keeping AI-assisted codebases on the rails."
+  github = "https://github.com/norlinga/trellis"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = true
+    lineNos = false
+    style = "github-dark"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+
+[menu]
+  [[menu.main]]
+    name = "Whitepaper"
+    url = "/whitepaper/"
+    weight = 10
+  [[menu.main]]
+    name = "FAQ"
+    url = "/faq/"
+    weight = 20
+  [[menu.main]]
+    name = "Quickstart"
+    url = "/quickstart/"
+    weight = 30
+  [[menu.main]]
+    name = "Glossary"
+    url = "/glossary/"
+    weight = 40

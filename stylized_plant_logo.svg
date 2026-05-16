@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Stylized Sprout Technology Logo</title>
+  <desc id="desc">A teal stylized plant with a central stem and three curved leaves, suitable for an IDE file type icon or technology logo.</desc>
+  <defs>
+    <style>
+      .stroke { fill: none; stroke: #11a7b5; stroke-width: 22; stroke-linecap: round; stroke-linejoin: round; }
+      .fill { fill: #11a7b5; }
+      .accent { fill: none; stroke: #ffffff; stroke-width: 8; stroke-linecap: round; opacity: .72; }
+    </style>
+  </defs>
+
+  <!-- central stem -->
+  <path class="stroke" d="M247 447 C246 372 247 285 250 216 C252 162 257 101 287 72 C306 53 335 61 354 88"/>
+  <path class="stroke" d="M224 448 C225 363 226 275 230 205" opacity=".9"/>
+
+  <!-- top right leaf -->
+  <path class="fill" d="M289 71 C357 52 423 104 430 178 C374 189 317 168 289 71 Z"/>
+  <path d="M289 71 C357 52 423 104 430 178 C374 189 317 168 289 71 Z" fill="none" stroke="#0a8f9d" stroke-width="12" stroke-linejoin="round"/>
+  <path class="accent" d="M325 87 C350 91 377 109 399 139"/>
+  <path class="accent" d="M340 119 C358 121 382 132 405 158"/>
+
+  <!-- left leaf -->
+  <path class="fill" d="M225 187 C159 160 95 191 76 254 C126 280 194 260 225 187 Z"/>
+  <path d="M225 187 C159 160 95 191 76 254 C126 280 194 260 225 187 Z" fill="none" stroke="#0a8f9d" stroke-width="12" stroke-linejoin="round"/>
+  <path class="accent" d="M104 238 C132 214 159 201 195 195"/>
+  <path class="accent" d="M126 256 C148 234 170 219 202 207"/>
+
+  <!-- lower right leaf -->
+  <path class="fill" d="M259 309 C313 272 379 288 409 343 C367 378 300 377 259 309 Z"/>
+  <path d="M259 309 C313 272 379 288 409 343 C367 378 300 377 259 309 Z" fill="none" stroke="#0a8f9d" stroke-width="12" stroke-linejoin="round"/>
+  <path class="accent" d="M294 313 C327 305 357 314 386 336"/>
+  <path class="accent" d="M309 342 C333 333 360 334 390 348"/>
+
+  <!-- inner connecting curves -->
+  <path class="stroke" d="M232 207 C221 195 213 188 198 184" opacity=".9"/>
+  <path class="stroke" d="M250 316 C266 297 285 289 309 287" opacity=".9"/>
+</svg>

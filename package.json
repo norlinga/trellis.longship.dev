@@ -1,0 +1,16 @@
+{
+  "name": "trellis-longship-dev",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/styles/site.css --minify",
+    "dev:css": "tailwindcss -i ./assets/css/main.css -o ./static/styles/site.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "latest",
+    "autoprefixer": "latest",
+    "daisyui": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}
+

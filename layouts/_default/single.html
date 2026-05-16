@@ -1,0 +1,37 @@
+{{ define "main" }}
+  <article>
+
+    {{/* Page header */}}
+    <header class="max-w-3xl border-b border-sage-200 pb-10 mb-12">
+      {{ with .Params.kicker }}
+        <p class="eyebrow mb-5">{{ . }}</p>
+      {{ end }}
+      <h1 class="font-serif text-5xl leading-tight text-sage-950 md:text-6xl">{{ .Title }}</h1>
+      {{ with .Params.summary }}
+        <p class="mt-6 font-body text-xl leading-9 text-sage-700">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{/* Body: prose column + optional sidebar TOC */}}
+    <div class="lg:grid lg:grid-cols-[1fr_220px] lg:gap-16 lg:items-start">
+
+      <div class="prose prose-lg max-w-none
+        prose-headings:scroll-mt-8
+        prose-pre:rounded-lg
+        prose-code:before:content-none
+        prose-code:after:content-none">
+        {{ .Content }}
+      </div>
+
+      {{ if .TableOfContents }}
+        <aside class="hidden lg:block sticky top-8 mt-1">
+          <p class="font-body text-xs font-semibold uppercase tracking-[0.17em] text-sage-400 mb-4">On this page</p>
+          <nav class="toc-nav font-body text-sm leading-6 text-sage-600">
+            {{ .TableOfContents }}
+          </nav>
+        </aside>
+      {{ end }}
+
+    </div>
+  </article>
+{{ end }}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default `en-US` }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="min-h-screen">
+    <div class="page-shell pb-24 pt-8 md:pt-10">
+      {{ partial "header.html" . }}
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>

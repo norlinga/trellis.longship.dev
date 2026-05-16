@@ -7,9 +7,6 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "latest",
-    "autoprefixer": "latest",
-    "daisyui": "latest",
-    "postcss": "latest",
     "tailwindcss": "latest"
   }
 }
